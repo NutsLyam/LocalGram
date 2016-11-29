@@ -30,5 +30,12 @@ namespace LocalGram.WebApi.Controllers
         {
             return _dataLayer.GetUser(id);
         }
+        [HttpDelete]
+        [Route("api/users/{id}")]
+        public void DeleteUser(Guid id)
+        {
+            _dataLayer.DeleteUser(id);
+
+        }
     }
 }

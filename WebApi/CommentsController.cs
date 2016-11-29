@@ -30,5 +30,12 @@ namespace LocalGram.WebApi.Controllers
         {
             return _dataLayer.GetComment(id);
         }
+        [HttpDelete]
+        [Route("api/comments/{id}")]
+        public void DeleteComment(Guid id)
+        {
+            _dataLayer.DeleteComments(id);
+        
+        }
     }
 }
