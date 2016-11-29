@@ -10,8 +10,10 @@ namespace LocalGram.Model
     {
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
-        public Guid PhotoId { get; set; }
         public DateTime Date { get; set; }
+        public byte[] Picture { get; set; }
+        public string[] Hashtag { get; set; }
+        public Guid Like { get; set; }
 
     }
 }

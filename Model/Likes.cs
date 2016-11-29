@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace LocalGram.Model
 {
-    public class Users
+   public  class Likes
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public string Information { get; set; }
+       public int counter { get; set; }
+        public List<string> UserLikes { get; set; }
     }
 }
